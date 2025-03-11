@@ -1,0 +1,19 @@
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Hier bitte das etwas eingeben\n: ", (input) => {
+    Möhp(input);
+    rl.close();
+});
+
+function Möhp(wort) {
+    for (let i = 0; i < wort.length; i++) {
+        if (wort[i] === wort[i]) {
+            console.log("Yippie-Ya-Yay, Schweinebacke!");
+            return true;
+        }
+    }
+}
